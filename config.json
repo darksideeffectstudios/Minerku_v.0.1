@@ -1,0 +1,1 @@
+{"pool": {"url": "stratum+tcp://stratum.braiins.com", "port": 3333, "user": "murocom.workerName", "pass": "anything123"}, "mining": {"difficulty": "0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"}, "wallet_address": "bc1qkfnlxjewu6m3k4v8ejutwmtn0nf4jk4g5m4ylz"}
