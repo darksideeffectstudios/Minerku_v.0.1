@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Mining Config</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Mining Configuration</h2>
+        <form action="/settings" method="POST">
+            <!-- Pool URL Input -->
+            <div class="form-group">
+                <label for="pool_url">Pool URL</label>
+                <input type="text" class="form-control" id="pool_url" name="pool_url" placeholder="Enter pool URL" required>
+            </div>
+            
+            <!-- Pool Port Input -->
+            <div class="form-group">
+                <label for="pool_port">Pool Port</label>
+                <input type="number" class="form-control" id="pool_port" name="pool_port" placeholder="Enter pool port" required>
+            </div>
+            
+            <!-- Worker Username Input -->
+            <div class="form-group">
+                <label for="worker_user">Worker Username</label>
+                <input type="text" class="form-control" id="worker_user" name="worker_user" placeholder="Enter worker username" required>
+            </div>
+            
+            <!-- Worker Password Input -->
+            <div class="form-group">
+                <label for="worker_pass">Worker Password</label>
+                <input type="password" class="form-control" id="worker_pass" name="worker_pass" placeholder="Enter worker password (optional)">
+            </div>
+
+            <!-- Wallet Address Input -->
+            <div class="form-group">
+                <label for="wallet_address">Wallet Address</label>
+                <input type="text" class="form-control" id="wallet_address" name="wallet_address" placeholder="Enter wallet address" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Save Settings</button>
+        </form>
+
+        <!-- Message or Success/Failure alert -->
+        {% if message %}
+        <div class="alert alert-success mt-3">{{ message }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Optional Bootstrap JS for better responsiveness -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
